@@ -1,0 +1,113 @@
+.features {
+  padding: 0;
+  background: white;
+}
+
+.features-banner {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 163, 255, 0.95) 100%),
+              url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.banner-content h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content p {
+  font-size: 20px;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 102, 204, 0.2);
+}
+
+.feature-icon-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-icon {
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .features-banner {
+    padding: 60px 0;
+  }
+
+  .banner-content h2 {
+    font-size: 36px;
+  }
+
+  .banner-content p {
+    font-size: 18px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 50px 0;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+}
+

@@ -1,0 +1,140 @@
+.programs {
+  padding: 100px 0;
+  background: white;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.program-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.program-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.program-card:hover .program-image img {
+  transform: scale(1.1);
+}
+
+.program-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.9) 0%, rgba(0, 163, 255, 0.9) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.program-card:hover .program-overlay {
+  opacity: 1;
+}
+
+.program-degree {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.program-content {
+  padding: 30px;
+}
+
+.program-duration {
+  font-size: 14px;
+  color: #0066cc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.program-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.program-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.program-link {
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.3s;
+}
+
+.program-link:hover {
+  gap: 12px;
+}
+
+.program-link span {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.program-link:hover span {
+  transform: translateX(5px);
+}
+
+.programs-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .programs {
+    padding: 60px 0;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .program-image {
+    height: 200px;
+  }
+}
+

@@ -1,0 +1,122 @@
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.language-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.language-flag {
+  font-size: 18px;
+}
+
+.language-code {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.language-arrow {
+  font-size: 10px;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  overflow: hidden;
+  z-index: 1000;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 18px;
+  background: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+  color: #333;
+}
+
+.language-option:hover {
+  background: #f0f4f8;
+  color: #0066cc;
+}
+
+.language-option.active {
+  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  color: white;
+}
+
+.language-option.active:hover {
+  background: linear-gradient(135deg, #0052a3 0%, #0088cc 100%);
+}
+
+.language-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.language-option .check {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .language-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .language-code {
+    display: none;
+  }
+
+  .language-dropdown {
+    right: -20px;
+    min-width: 160px;
+  }
+}
+

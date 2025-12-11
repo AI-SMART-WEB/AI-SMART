@@ -1,0 +1,73 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import './Header.css';
+
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="top-banner">
+        <div className="container">
+          <div className="top-banner-content">
+            <div className="top-banner-left">
+              <span>📧 info@ai-smart.edu</span>
+              <span>📞 +33 1 23 45 67 89</span>
+            </div>
+            <div className="top-banner-right">
+              <Link to="/application">Apply Now</Link>
+              <Link to="/student-portal">Student Portal</Link>
+              <LanguageSwitcher />
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav className="navbar">
+        <div className="container">
+          <div className="nav-wrapper">
+            <div className="logo">
+              <h1>AI-SMART</h1>
+              <span className="logo-tagline">Excellence in Education</span>
+            </div>
+            <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+              <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link></li>
+              <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link></li>
+              <li><Link to="/programs" onClick={() => setIsMobileMenuOpen(false)}>Programs</Link></li>
+              <li><Link to="/admissions" onClick={() => setIsMobileMenuOpen(false)}>Admissions</Link></li>
+              <li><Link to="/international" onClick={() => setIsMobileMenuOpen(false)}>International</Link></li>
+              <li><Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link></li>
+              <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link></li>
+              <li><Link to="/application" className="btn-apply" onClick={() => setIsMobileMenuOpen(false)}>Apply Now</Link></li>
+            </ul>
+            <div 
+              className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
+
