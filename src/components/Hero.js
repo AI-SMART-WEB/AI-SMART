@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="stats-grid">
             {[
               { 
-                number: '15,000+', 
+                number: '1500+', 
                 label: t.students, 
                 Icon: FaUsers
               },
