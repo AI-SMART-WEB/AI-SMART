@@ -1,29 +1,36 @@
 # AI-SMART College Website
 
-A modern, professional college website built with React for the frontend.
+A modern, professional college website built with React, featuring multi-language support, student portal, and advanced animations.
 
 ## Features
 
-- 🎨 Modern and professional design
-- 📱 Fully responsive layout
-- 🖼️ Rich image galleries and banners
-- 🎯 Multiple sections: Hero, About, Programs, Features, Testimonials, Gallery, Contact
-- ⚡ Smooth scrolling and animations
-- 🎭 Interactive components
+- 🌍 **Multi-language Support**: English, French, and Spanish
+- 🎓 **Student Portal**: Register and Login functionality
+- 📱 **Fully Responsive**: Works on all devices
+- ✨ **Advanced Animations**: Framer Motion and AOS animations
+- 🎨 **Modern Design**: Professional UI/UX
+- 📄 **Multi-page Structure**: Separate pages for all sections
+
+## Tech Stack
+
+- React 18.2.0
+- React Router DOM 6.20.0
+- Framer Motion 10.16.16
+- AOS (Animate On Scroll) 2.3.4
 
 ## Installation
 
-1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+## Development
+
 ```bash
 npm start
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ## Build for Production
 
@@ -31,36 +38,35 @@ npm start
 npm run build
 ```
 
-This creates an optimized production build in the `build` folder.
+Builds the app for production to the `build` folder.
+
+## Deployment
+
+This project is configured for Netlify deployment. The `netlify.toml` file contains the build configuration.
 
 ## Project Structure
 
 ```
 src/
-├── components/
-│   ├── Header.js          # Navigation header with top banner
-│   ├── Hero.js            # Hero section with banner
-│   ├── About.js           # About section with images
-│   ├── Programs.js        # Programs showcase
-│   ├── Features.js        # Features section
-│   ├── Testimonials.js    # Student testimonials
-│   ├── Gallery.js         # Image gallery
-│   ├── Contact.js         # Contact form
-│   └── Footer.js          # Footer component
-├── App.js                 # Main app component
-├── App.css                # Global app styles
-├── index.js               # Entry point
-└── index.css              # Base styles
+├── components/     # Reusable components
+├── pages/         # Page components
+├── context/       # React Context (Language)
+├── translations/  # Translation files
+└── App.js         # Main app component
 ```
 
-## Backend Integration
+## Pages
 
-The contact form is ready for PHP backend integration. The form data will be sent to a PHP endpoint for processing.
+- Home
+- About
+- Programs
+- Admissions
+- Application Form
+- International Students
+- Gallery
+- Contact
+- Student Portal
 
-## Technologies Used
+## License
 
-- React 18.2.0
-- React Router DOM 6.20.0
-- CSS3 with modern features
-- Responsive design principles
-
+© 2024 AI-SMART. All rights reserved.
