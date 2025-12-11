@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -147,14 +148,14 @@ const Programs = () => {
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
-                <motion.a 
-                  href="/application" 
-                  className="program-link-page"
+                <motion.div
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Apply Now <span>→</span>
-                </motion.a>
+                  <Link to="/application" className="program-link-page">
+                    Apply Now <span>→</span>
+                  </Link>
+                </motion.div>
               </div>
             </motion.div>
           ))}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
@@ -114,14 +115,14 @@ const About = () => {
                 </motion.div>
               ))}
             </div>
-            <motion.a 
-              href="/programs" 
-              className="btn btn-primary"
+            <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t.learnMore}
-            </motion.a>
+              <Link to="/programs" className="btn btn-primary">
+                {t.learnMore}
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </div>

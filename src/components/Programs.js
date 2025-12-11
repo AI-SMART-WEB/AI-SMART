@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
@@ -125,14 +126,14 @@ const Programs = () => {
                 <div className="program-duration">{program.duration}</div>
                 <h3>{program.title}</h3>
                 <p>{program.description}</p>
-                <motion.a 
-                  href="/application" 
-                  className="program-link"
+                <motion.div
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {t.learnMore} <span>→</span>
-                </motion.a>
+                  <Link to="/application" className="program-link">
+                    {t.learnMore} <span>→</span>
+                  </Link>
+                </motion.div>
               </div>
             </motion.div>
           ))}
@@ -144,14 +145,14 @@ const Programs = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <motion.a 
-            href="/contact" 
-            className="btn btn-primary"
+          <motion.div
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            {t.viewAllPrograms}
-          </motion.a>
+            <Link to="/contact" className="btn btn-primary">
+              {t.viewAllPrograms}
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>
