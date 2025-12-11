@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUsers, FaChalkboardTeacher, FaBook, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaGlobe, FaUsers } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations/translations';
 import './Hero.css';
@@ -28,37 +28,35 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-stats">
+      <div className="hero-features">
         <div className="container">
-          <div className="stats-grid">
+          <div className="features-grid">
             {[
               { 
-                number: '1500+', 
-                label: t.students, 
-                Icon: FaUsers
+                icon: <FaGraduationCap />,
+                title: t.excellenceInEducation,
+                desc: t.excellenceInEducationDesc || 'World-class education programs'
               },
               { 
-                number: '500+', 
-                label: t.facultyMembers, 
-                Icon: FaChalkboardTeacher
+                icon: <FaAward />,
+                title: t.accreditedPrograms || 'Accredited Programs',
+                desc: t.accreditedProgramsDesc || 'Internationally recognized degrees'
               },
               { 
-                number: '50+', 
-                label: t.programsCount, 
-                Icon: FaBook
+                icon: <FaGlobe />,
+                title: t.globalNetwork || 'Global Network',
+                desc: t.globalNetworkDesc || 'Connect with students worldwide'
               },
               { 
-                number: '95%', 
-                label: t.employmentRate, 
-                Icon: FaBriefcase
+                icon: <FaUsers />,
+                title: t.expertFaculty || 'Expert Faculty',
+                desc: t.expertFacultyDesc || 'Learn from industry leaders'
               }
-            ].map((stat, index) => (
-              <div key={index} className="stat-item">
-                <stat.Icon className="stat-icon" />
-                <div className="stat-content">
-                  <div className="stat-number">{stat.number}</div>
-                  <div className="stat-label">{stat.label}</div>
-                </div>
+            ].map((feature, index) => (
+              <div key={index} className="feature-card">
+                <div className="feature-icon">{feature.icon}</div>
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-desc">{feature.desc}</p>
               </div>
             ))}
           </div>
