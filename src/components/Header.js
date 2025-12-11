@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
 
 const Header = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -30,8 +34,8 @@ const Header = () => {
               <span>📞 +33 1 23 45 67 89</span>
             </div>
             <div className="top-banner-right">
-              <Link to="/application">Apply Now</Link>
-              <Link to="/student-portal">Student Portal</Link>
+              <Link to="/application">{t.applyNow}</Link>
+              <Link to="/student-portal">{t.studentPortal}</Link>
               <LanguageSwitcher />
             </div>
           </div>
@@ -42,17 +46,17 @@ const Header = () => {
           <div className="nav-wrapper">
             <div className="logo">
               <h1>AI-SMART</h1>
-              <span className="logo-tagline">Excellence in Education</span>
+              <span className="logo-tagline">{t.excellenceInEducation}</span>
             </div>
             <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-              <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link></li>
-              <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link></li>
-              <li><Link to="/programs" onClick={() => setIsMobileMenuOpen(false)}>Programs</Link></li>
-              <li><Link to="/admissions" onClick={() => setIsMobileMenuOpen(false)}>Admissions</Link></li>
-              <li><Link to="/international" onClick={() => setIsMobileMenuOpen(false)}>International</Link></li>
-              <li><Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link></li>
-              <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link></li>
-              <li><Link to="/application" className="btn-apply" onClick={() => setIsMobileMenuOpen(false)}>Apply Now</Link></li>
+              <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>{t.home}</Link></li>
+              <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>{t.about}</Link></li>
+              <li><Link to="/programs" onClick={() => setIsMobileMenuOpen(false)}>{t.programs}</Link></li>
+              <li><Link to="/admissions" onClick={() => setIsMobileMenuOpen(false)}>{t.admissions}</Link></li>
+              <li><Link to="/international" onClick={() => setIsMobileMenuOpen(false)}>{t.international}</Link></li>
+              <li><Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)}>{t.gallery}</Link></li>
+              <li><Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>{t.contact}</Link></li>
+              <li><Link to="/application" className="btn-apply" onClick={() => setIsMobileMenuOpen(false)}>{t.applyNow}</Link></li>
             </ul>
             <div 
               className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}

@@ -1,8 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import './Testimonials.css';
 
 const Testimonials = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+  
   const testimonials = [
     {
       id: 1,
@@ -51,8 +56,8 @@ const Testimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2>What Our Students Say</h2>
-          <p>Hear from our alumni and current students about their AI-SMART experience</p>
+          <h2>{t.whatStudentsSay}</h2>
+          <p>{t.testimonialsDesc}</p>
         </motion.div>
         <motion.div 
           className="testimonials-grid"

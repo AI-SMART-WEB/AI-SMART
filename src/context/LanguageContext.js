@@ -11,19 +11,15 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem('preferred-language');
+    return savedLanguage || 'en';
+  });
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
     localStorage.setItem('preferred-language', lang);
   };
-
-  React.useEffect(() => {
-    const savedLanguage = localStorage.getItem('preferred-language');
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    }
-  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, changeLanguage }}>

@@ -1,38 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import './Features.css';
 
 const Features = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+  
   const features = [
     {
       icon: '🏛️',
-      title: 'Modern Campus',
-      description: 'State-of-the-art facilities with cutting-edge technology and resources'
+      title: t.modernCampus,
+      description: t.modernCampusDesc
     },
     {
       icon: '👨‍🏫',
-      title: 'Expert Faculty',
-      description: 'Learn from industry leaders and renowned academic professionals'
+      title: t.expertFaculty,
+      description: t.expertFacultyDesc
     },
     {
       icon: '🌐',
-      title: 'Global Opportunities',
-      description: 'Study abroad programs and international exchange opportunities'
+      title: t.globalOpportunities,
+      description: t.globalOpportunitiesDesc
     },
     {
       icon: '💡',
-      title: 'Innovation Labs',
-      description: 'Access to research labs and innovation centers for hands-on learning'
+      title: t.innovationLabs,
+      description: t.innovationLabsDesc
     },
     {
       icon: '🤝',
-      title: 'Industry Partnerships',
-      description: 'Strong connections with leading companies for internships and placements'
+      title: t.industryPartnerships,
+      description: t.industryPartnershipsDesc
     },
     {
       icon: '📚',
-      title: 'Digital Library',
-      description: 'Extensive digital resources and 24/7 access to online materials'
+      title: t.digitalLibrary,
+      description: t.digitalLibraryDesc
     }
   ];
 
@@ -61,8 +66,8 @@ const Features = () => {
       >
         <div className="container">
           <div className="banner-content">
-            <h2>Why Choose AI-SMART?</h2>
-            <p>Experience excellence in education with world-class facilities and opportunities</p>
+            <h2>{t.whyChoose}</h2>
+            <p>{t.whyChooseDesc}</p>
           </div>
         </div>
       </motion.div>

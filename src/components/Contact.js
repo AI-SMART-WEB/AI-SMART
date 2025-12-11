@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import './Contact.css';
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,43 +40,43 @@ const Contact = () => {
       <div className="contact-banner">
         <div className="container">
           <div className="contact-banner-content">
-            <h2>Get In Touch</h2>
-            <p>We're here to help you on your educational journey</p>
+            <h2>{t.getInTouch}</h2>
+            <p>{t.contactDesc}</p>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Contact Information</h3>
-            <p>Feel free to reach out to us through any of the following channels:</p>
+            <h3>{t.contactInformation}</h3>
+            <p>{t.contactDesc2}</p>
             <div className="contact-details">
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
                 <div>
-                  <h4>Address</h4>
-                  <p>123 Education Boulevard<br />Paris, France 75001</p>
+                  <h4>{t.addressLabel}</h4>
+                  <p>{t.address}</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div>
-                  <h4>Phone</h4>
-                  <p>+33 1 23 45 67 89<br />+33 1 23 45 67 90</p>
+                  <h4>{t.phoneLabel}</h4>
+                  <p>{t.phone}<br />+33 1 23 45 67 90</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📧</div>
                 <div>
-                  <h4>Email</h4>
-                  <p>info@ai-smart.edu<br />admissions@ai-smart.edu</p>
+                  <h4>{t.emailLabel}</h4>
+                  <p>{t.email}<br />admissions@ai-smart.edu</p>
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">🕒</div>
                 <div>
-                  <h4>Office Hours</h4>
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM - 2:00 PM</p>
+                  <h4>{t.officeHoursLabel}</h4>
+                  <p>{t.officeHours}</p>
                 </div>
               </div>
             </div>
@@ -84,10 +88,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-form-wrapper">
-            <h3>Send Us a Message</h3>
+            <h3>{t.sendMessage}</h3>
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Full Name *</label>
+                <label htmlFor="name">{t.fullName} *</label>
                 <input
                   type="text"
                   id="name"
@@ -95,11 +99,11 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Enter your full name"
+                  placeholder={t.fullName}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email Address *</label>
+                <label htmlFor="email">{t.emailAddress} *</label>
                 <input
                   type="email"
                   id="email"
@@ -107,39 +111,39 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="Enter your email"
+                  placeholder={t.emailAddress}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone Number</label>
+                <label htmlFor="phone">{t.phoneNumber}</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Enter your phone number"
+                  placeholder={t.phoneNumber}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="program">Program of Interest</label>
+                <label htmlFor="program">{t.programOfInterest}</label>
                 <select
                   id="program"
                   name="program"
                   value={formData.program}
                   onChange={handleChange}
                 >
-                  <option value="">Select a program</option>
-                  <option value="business">Business Administration</option>
-                  <option value="cs">Computer Science</option>
-                  <option value="engineering">Engineering</option>
-                  <option value="arts">Arts & Humanities</option>
-                  <option value="medical">Medical Sciences</option>
-                  <option value="law">Law & Legal Studies</option>
+                  <option value="">{t.selectProgram}</option>
+                  <option value="business">{t.businessAdmin}</option>
+                  <option value="cs">{t.computerScience}</option>
+                  <option value="engineering">{t.engineering}</option>
+                  <option value="arts">{t.artsHumanities}</option>
+                  <option value="medical">{t.medicalSciences}</option>
+                  <option value="law">{t.lawLegal}</option>
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message *</label>
+                <label htmlFor="message">{t.message} *</label>
                 <textarea
                   id="message"
                   name="message"
@@ -147,10 +151,10 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  placeholder="Tell us how we can help you..."
+                  placeholder={t.tellUsHow}
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Send Message</button>
+              <button type="submit" className="btn btn-primary">{t.sendMessageBtn}</button>
             </form>
           </div>
         </div>

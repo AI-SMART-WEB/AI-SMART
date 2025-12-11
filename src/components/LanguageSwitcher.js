@@ -17,8 +17,6 @@ const LanguageSwitcher = () => {
   const handleLanguageChange = (langCode) => {
     changeLanguage(langCode);
     setIsOpen(false);
-    // Reload page to apply translations
-    window.location.reload();
   };
 
   return (

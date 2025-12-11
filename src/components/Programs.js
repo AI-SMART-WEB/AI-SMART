@@ -1,53 +1,58 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import './Programs.css';
 
 const Programs = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+  
   const programs = [
     {
       id: 1,
-      title: 'Business Administration',
-      description: 'Comprehensive MBA program designed for future business leaders',
+      title: t.businessAdmin,
+      description: t.businessAdminDesc,
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '2 Years',
       degree: 'MBA'
     },
     {
       id: 2,
-      title: 'Computer Science',
-      description: 'Cutting-edge technology and software engineering programs',
+      title: t.computerScience,
+      description: t.computerScienceDesc,
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '4 Years',
       degree: 'B.Sc / M.Sc'
     },
     {
       id: 3,
-      title: 'Engineering',
-      description: 'Advanced engineering programs in multiple specializations',
+      title: t.engineering,
+      description: t.engineeringDesc,
       image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '4 Years',
       degree: 'B.Eng / M.Eng'
     },
     {
       id: 4,
-      title: 'Arts & Humanities',
-      description: 'Explore creativity and critical thinking in diverse fields',
+      title: t.artsHumanities,
+      description: t.artsHumanitiesDesc,
       image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '3-4 Years',
       degree: 'B.A / M.A'
     },
     {
       id: 5,
-      title: 'Medical Sciences',
-      description: 'Pre-med and health sciences programs for future healthcare professionals',
+      title: t.medicalSciences,
+      description: t.medicalSciencesDesc,
       image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '5-6 Years',
       degree: 'M.D / B.Sc'
     },
     {
       id: 6,
-      title: 'Law & Legal Studies',
-      description: 'Comprehensive legal education for aspiring lawyers and jurists',
+      title: t.lawLegal,
+      description: t.lawLegalDesc,
       image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '3-4 Years',
       degree: 'LL.B / LL.M'
@@ -78,8 +83,8 @@ const Programs = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Our Programs</h2>
-          <p>Choose from a wide range of accredited programs designed for your success</p>
+          <h2>{t.ourPrograms}</h2>
+          <p>{t.programsSubtitle}</p>
         </motion.div>
         <motion.div 
           className="programs-grid"
@@ -126,7 +131,7 @@ const Programs = () => {
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Learn More <span>→</span>
+                  {t.learnMore} <span>→</span>
                 </motion.a>
               </div>
             </motion.div>
@@ -145,7 +150,7 @@ const Programs = () => {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            View All Programs
+            {t.viewAllPrograms}
           </motion.a>
         </motion.div>
       </div>

@@ -1,8 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import './About.css';
 
 const About = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+  
   const imageVariants = {
     hidden: { opacity: 0, x: -50 },
     visible: {
@@ -31,8 +36,8 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2>About AI-SMART</h2>
-          <p>Excellence in Education Since 1990</p>
+          <h2>{t.aboutTitle}</h2>
+          <p>{t.aboutSubtitle}</p>
         </motion.div>
         <div className="about-content">
           <motion.div 
@@ -82,24 +87,15 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h3>Leading the Future of Education</h3>
-            <p>
-              AI-SMART is a premier educational institution dedicated to providing world-class 
-              education and fostering innovation. With over 30 years of excellence, we have 
-              established ourselves as a leader in academic achievement and student success.
-            </p>
-            <p>
-              Our mission is to empower students with the knowledge, skills, and values needed 
-              to excel in their chosen fields and make a positive impact on society. We combine 
-              traditional academic rigor with modern teaching methodologies and cutting-edge 
-              technology.
-            </p>
+            <h3>{t.leadingFuture}</h3>
+            <p>{t.aboutText1}</p>
+            <p>{t.aboutText2}</p>
             <div className="about-features">
               {[
-                { icon: '🎓', title: 'World-Class Faculty', desc: 'Experienced professors and industry experts' },
-                { icon: '🏆', title: 'Accredited Programs', desc: 'Internationally recognized degrees and certifications' },
-                { icon: '🌍', title: 'Global Network', desc: 'Partnerships with leading universities worldwide' },
-                { icon: '💼', title: 'Career Support', desc: 'Dedicated career services and job placement assistance' }
+                { icon: '🎓', title: t.worldClassFaculty, desc: t.worldClassFacultyDesc },
+                { icon: '🏆', title: t.accreditedPrograms, desc: t.accreditedProgramsDesc },
+                { icon: '🌍', title: t.globalNetwork, desc: t.globalNetworkDesc },
+                { icon: '💼', title: t.careerSupport, desc: t.careerSupportDesc }
               ].map((feature, index) => (
                 <motion.div
                   key={index}
@@ -124,7 +120,7 @@ const About = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              Learn More
+              {t.learnMore}
             </motion.a>
           </motion.div>
         </div>
