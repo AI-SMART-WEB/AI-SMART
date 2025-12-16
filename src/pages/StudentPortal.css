@@ -5,7 +5,7 @@
 }
 
 .portal-hero {
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 163, 255, 0.95) 100%),
+  background: linear-gradient(135deg, rgba(0, 47, 95, 0.95) 0%, rgba(41, 171, 226, 0.95) 100%),
               url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
@@ -65,13 +65,13 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   transform: scaleX(0);
   transition: transform 0.3s;
 }
 
 .tab-button.active {
-  color: #0066cc;
+  color: #002F5F;
   background: white;
 }
 
@@ -81,7 +81,7 @@
 
 .tab-button:hover:not(.active) {
   background: #f0f4f8;
-  color: #0066cc;
+  color: #002F5F;
 }
 
 .portal-form-container {
@@ -126,9 +126,9 @@
 
 .portal-form input:focus {
   outline: none;
-  border-color: #0066cc;
+  border-color: #002F5F;
   background: white;
-  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 47, 95, 0.1);
 }
 
 .form-options {
@@ -151,11 +151,11 @@
   width: 18px;
   height: 18px;
   cursor: pointer;
-  accent-color: #0066cc;
+  accent-color: #002F5F;
 }
 
 .forgot-link {
-  color: #0066cc;
+  color: #002F5F;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -163,13 +163,14 @@
 }
 
 .forgot-link:hover {
-  color: #004499;
+  color: #002F5F;
   text-decoration: underline;
 }
 
 .portal-submit {
-  width: 100%;
-  padding: 16px;
+  width: auto;
+  padding: 8px 20px;
+  font-size: 14px;
   font-size: 17px;
   margin-top: 10px;
 }
@@ -184,7 +185,7 @@
 .link-button {
   background: none;
   border: none;
-  color: #0066cc;
+  color: #002F5F;
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
@@ -193,7 +194,7 @@
 }
 
 .link-button:hover {
-  color: #004499;
+  color: #002F5F;
 }
 
 @media (max-width: 768px) {

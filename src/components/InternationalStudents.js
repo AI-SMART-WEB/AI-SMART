@@ -60,7 +60,7 @@ const InternationalStudents = () => {
         <div className="container">
           <div className="international-hero-content">
             <h2>International Students</h2>
-            <p>Join students from over 50 countries at AI-SMART</p>
+            <p>Join students from over 50 countries at GI-SMART</p>
             <div className="hero-stats">
               <div className="stat">
                 <span className="stat-number">50+</span>
@@ -83,9 +83,9 @@ const InternationalStudents = () => {
         <div className="international-content">
           <div className="welcome-section">
             <div className="welcome-text">
-              <h3>Welcome to AI-SMART</h3>
+              <h3>Welcome to GI-SMART</h3>
               <p>
-                At AI-SMART, we welcome students from around the world to join our diverse 
+                At GI-SMART, we welcome students from around the world to join our diverse 
                 and inclusive community. Our international students bring unique perspectives 
                 and enrich our campus culture.
               </p>
@@ -112,7 +112,7 @@ const InternationalStudents = () => {
             <div className="welcome-image">
               <img 
                 src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="International Students"
+                alt="Global Classroom - Many accents, one conversation — a world of perspectives in a single room"
               />
             </div>
           </div>
@@ -159,7 +159,7 @@ const InternationalStudents = () => {
           <div className="cta-section">
             <div className="cta-card">
               <h3>Ready to Start Your Journey?</h3>
-              <p>Join our international community and experience world-class education at AI-SMART</p>
+              <p>Join our international community and experience world-class education at GI-SMART</p>
               <div className="cta-buttons">
                 <a href="#application" className="btn btn-primary">Apply Now</a>
                 <a href="#contact" className="btn btn-secondary">Contact Us</a>

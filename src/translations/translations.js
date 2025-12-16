@@ -13,8 +13,8 @@ export const translations = {
     excellenceInEducation: 'Excellence in Education',
     
     // Hero
-    welcomeTitle: 'Welcome to AI-SMART',
-    welcomeSubtitle: 'Shaping Tomorrow\'s Leaders Through Excellence in Education',
+    welcomeTitle: 'Welcome to the Future of Education',
+    welcomeSubtitle: 'GI-SMART – The Global Institute for Strategic Management & Advanced Research Technologies | Where Intelligence Meets Imagination',
     explorePrograms: 'Explore Programs',
     scrollDown: 'Scroll Down',
     students: 'Students',
@@ -24,11 +24,11 @@ export const translations = {
     excellenceSince1990: 'Excellence in Education Since 1990',
     
     // About
-    aboutTitle: 'About AI-SMART',
-    aboutSubtitle: 'Excellence in Education Since 1990',
-    leadingFuture: 'Leading the Future of Education',
-    aboutText1: 'AI-SMART is a premier educational institution dedicated to providing world-class education and fostering innovation. With over 30 years of excellence, we have established ourselves as a leader in academic achievement and student success.',
-    aboutText2: 'Our mission is to empower students with the knowledge, skills, and values needed to excel in their chosen fields and make a positive impact on society. We combine traditional academic rigor with modern teaching methodologies and cutting-edge technology.',
+    aboutTitle: 'About GI-SMART',
+    aboutSubtitle: 'Global Intelligence. Human Creativity.',
+    leadingFuture: 'Where Intelligence Meets Imagination',
+    aboutText1: 'In an age defined by artificial intelligence, data systems, and digital transformation, GI-SMART is more than an academic institution — it\'s a global innovation ecosystem. We are cultivating a new generation of thinkers, designers, and strategists who will lead the industries of the 21st century and redefine how technology shapes humanity.',
+    aboutText2: 'Our mission is simple yet revolutionary: To equip ambitious learners with the intelligence, creativity, and global perspective needed to thrive in the world\'s most competitive and evolving industries.',
     worldClassFaculty: 'World-Class Faculty',
     worldClassFacultyDesc: 'Experienced professors and industry experts',
     accreditedPrograms: 'Accredited Programs',
@@ -56,7 +56,7 @@ export const translations = {
     viewAllPrograms: 'View All Programs',
     
     // Features
-    whyChoose: 'Why Choose AI-SMART?',
+    whyChoose: 'Why Choose GI-SMART?',
     whyChooseDesc: 'Experience excellence in education with world-class facilities and opportunities',
     modernCampus: 'Modern Campus',
     modernCampusDesc: 'State-of-the-art facilities with cutting-edge technology and resources',
@@ -73,7 +73,7 @@ export const translations = {
     
     // Testimonials
     whatStudentsSay: 'What Our Students Say',
-    testimonialsDesc: 'Hear from our alumni and current students about their AI-SMART experience',
+    testimonialsDesc: 'Hear from our alumni and current students about their GI-SMART experience',
     
     // Common
     learnMore: 'Learn More',
@@ -87,7 +87,7 @@ export const translations = {
     contactInfo: 'Contact Info',
     address: '123 Education Boulevard, Paris, France 75001',
     phone: '+33 1 23 45 67 89',
-    email: 'info@ai-smart.edu',
+    email: 'info@gi-smart.edu',
     officeHours: 'Mon-Fri: 9:00 AM - 6:00 PM',
     allRightsReserved: 'All rights reserved.',
     privacyPolicy: 'Privacy Policy',
@@ -141,7 +141,7 @@ export const translations = {
     excellenceInEducation: 'Excellence en Éducation',
     
     // Hero
-    welcomeTitle: 'Bienvenue à AI-SMART',
+    welcomeTitle: 'Bienvenue à GI-SMART',
     welcomeSubtitle: 'Façonner les Leaders de Demain grâce à l\'Excellence en Éducation',
     explorePrograms: 'Explorer les Programmes',
     scrollDown: 'Défiler vers le Bas',
@@ -152,10 +152,10 @@ export const translations = {
     excellenceSince1990: 'Excellence en Éducation Depuis 1990',
     
     // About
-    aboutTitle: 'À Propos d\'AI-SMART',
+    aboutTitle: 'À Propos de GI-SMART',
     aboutSubtitle: 'Excellence en Éducation Depuis 1990',
     leadingFuture: 'Diriger l\'Avenir de l\'Éducation',
-    aboutText1: 'AI-SMART est un établissement d\'enseignement supérieur de premier plan dédié à fournir une éducation de classe mondiale et à favoriser l\'innovation. Avec plus de 30 ans d\'excellence, nous nous sommes établis comme leader en matière de réussite académique et de succès étudiant.',
+    aboutText1: 'GI-SMART est un établissement d\'enseignement supérieur de premier plan dédié à fournir une éducation de classe mondiale et à favoriser l\'innovation. Avec plus de 30 ans d\'excellence, nous nous sommes établis comme leader en matière de réussite académique et de succès étudiant.',
     aboutText2: 'Notre mission est de donner aux étudiants les connaissances, les compétences et les valeurs nécessaires pour exceller dans leurs domaines choisis et avoir un impact positif sur la société. Nous combinons la rigueur académique traditionnelle avec des méthodologies d\'enseignement modernes et une technologie de pointe.',
     worldClassFaculty: 'Corps Enseignant de Classe Mondiale',
     worldClassFacultyDesc: 'Professeurs expérimentés et experts de l\'industrie',
@@ -184,7 +184,7 @@ export const translations = {
     viewAllPrograms: 'Voir Tous les Programmes',
     
     // Features
-    whyChoose: 'Pourquoi Choisir AI-SMART?',
+    whyChoose: 'Pourquoi Choisir GI-SMART?',
     whyChooseDesc: 'Vivez l\'excellence en éducation avec des installations de classe mondiale et des opportunités',
     modernCampus: 'Campus Moderne',
     modernCampusDesc: 'Installations de pointe avec technologie et ressources de pointe',
@@ -201,7 +201,7 @@ export const translations = {
     
     // Testimonials
     whatStudentsSay: 'Ce Que Disent Nos Étudiants',
-    testimonialsDesc: 'Écoutez nos anciens étudiants et étudiants actuels parler de leur expérience AI-SMART',
+    testimonialsDesc: 'Écoutez nos anciens étudiants et étudiants actuels parler de leur expérience GI-SMART',
     
     // Common
     learnMore: 'En Savoir Plus',
@@ -215,7 +215,7 @@ export const translations = {
     contactInfo: 'Informations de Contact',
     address: '123 Boulevard de l\'Éducation, Paris, France 75001',
     phone: '+33 1 23 45 67 89',
-    email: 'info@ai-smart.edu',
+    email: 'info@gi-smart.edu',
     officeHours: 'Lun-Ven: 9h00 - 18h00',
     allRightsReserved: 'Tous droits réservés.',
     privacyPolicy: 'Politique de Confidentialité',
@@ -269,7 +269,7 @@ export const translations = {
     excellenceInEducation: 'Excelencia en Educación',
     
     // Hero
-    welcomeTitle: 'Bienvenido a AI-SMART',
+    welcomeTitle: 'Bienvenido a GI-SMART',
     welcomeSubtitle: 'Formando los Líderes del Mañana a través de la Excelencia en Educación',
     explorePrograms: 'Explorar Programas',
     scrollDown: 'Desplazar hacia Abajo',
@@ -280,10 +280,10 @@ export const translations = {
     excellenceSince1990: 'Excelencia en Educación Desde 1990',
     
     // About
-    aboutTitle: 'Acerca de AI-SMART',
+    aboutTitle: 'Acerca de GI-SMART',
     aboutSubtitle: 'Excelencia en Educación Desde 1990',
     leadingFuture: 'Liderando el Futuro de la Educación',
-    aboutText1: 'AI-SMART es una institución educativa de primer nivel dedicada a proporcionar educación de clase mundial y fomentar la innovación. Con más de 30 años de excelencia, nos hemos establecido como líderes en logros académicos y éxito estudiantil.',
+    aboutText1: 'GI-SMART es una institución educativa de primer nivel dedicada a proporcionar educación de clase mundial y fomentar la innovación. Con más de 30 años de excelencia, nos hemos establecido como líderes en logros académicos y éxito estudiantil.',
     aboutText2: 'Nuestra misión es capacitar a los estudiantes con el conocimiento, las habilidades y los valores necesarios para sobresalir en sus campos elegidos y tener un impacto positivo en la sociedad. Combinamos el rigor académico tradicional con metodologías de enseñanza modernas y tecnología de vanguardia.',
     worldClassFaculty: 'Facultad de Clase Mundial',
     worldClassFacultyDesc: 'Profesores experimentados y expertos de la industria',
@@ -312,7 +312,7 @@ export const translations = {
     viewAllPrograms: 'Ver Todos los Programas',
     
     // Features
-    whyChoose: '¿Por Qué Elegir AI-SMART?',
+    whyChoose: '¿Por Qué Elegir GI-SMART?',
     whyChooseDesc: 'Experimente la excelencia en educación con instalaciones de clase mundial y oportunidades',
     modernCampus: 'Campus Moderno',
     modernCampusDesc: 'Instalaciones de última generación con tecnología y recursos de vanguardia',
@@ -329,7 +329,7 @@ export const translations = {
     
     // Testimonials
     whatStudentsSay: 'Lo Que Dicen Nuestros Estudiantes',
-    testimonialsDesc: 'Escuche a nuestros ex alumnos y estudiantes actuales sobre su experiencia en AI-SMART',
+    testimonialsDesc: 'Escuche a nuestros ex alumnos y estudiantes actuales sobre su experiencia en GI-SMART',
     
     // Common
     learnMore: 'Saber Más',
@@ -343,7 +343,7 @@ export const translations = {
     contactInfo: 'Información de Contacto',
     address: '123 Boulevard de la Educación, París, Francia 75001',
     phone: '+33 1 23 45 67 89',
-    email: 'info@ai-smart.edu',
+    email: 'info@gi-smart.edu',
     officeHours: 'Lun-Vie: 9:00 AM - 6:00 PM',
     allRightsReserved: 'Todos los derechos reservados.',
     privacyPolicy: 'Política de Privacidad',

@@ -33,7 +33,7 @@ const About = () => {
           className="container"
           variants={fadeInUp}
         >
-          <h1>About AI-SMART</h1>
+          <h1>About GI-SMART</h1>
           <p>Excellence in Education Since 1990</p>
         </motion.div>
       </div>
@@ -48,7 +48,7 @@ const About = () => {
             <div className="content-text">
               <h2>Leading the Future of Education</h2>
               <p>
-                AI-SMART is a premier educational institution dedicated to providing world-class 
+                GI-SMART is a premier educational institution dedicated to providing world-class 
                 education and fostering innovation. With over 30 years of excellence, we have 
                 established ourselves as a leader in academic achievement and student success.
               </p>
@@ -90,7 +90,7 @@ const About = () => {
                 whileHover={{ 
                   y: -10,
                   scale: 1.05,
-                  boxShadow: "0 20px 40px rgba(0, 102, 204, 0.3)"
+                  boxShadow: "0 20px 40px rgba(0, 47, 95, 0.3)"
                 }}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

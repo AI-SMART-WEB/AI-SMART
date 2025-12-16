@@ -10,27 +10,44 @@ const Header = () => {
   const t = translations[language] || translations.en;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
+      const currentScrollY = window.scrollY;
+      
+      // Top par ho to always show
+      if (currentScrollY < 50) {
+        setIsVisible(true);
         setIsScrolled(false);
+      } else {
+        setIsScrolled(true);
+        
+        // Scroll direction detect karo
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          // Scroll down - hide navbar
+          setIsVisible(false);
+        } else if (currentScrollY < lastScrollY) {
+          // Scroll up - show navbar
+          setIsVisible(true);
+        }
       }
+      
+      setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${isScrolled ? 'scrolled' : ''} ${!isVisible ? 'hidden' : ''}`}>
       <div className="top-banner">
         <div className="container">
           <div className="top-banner-content">
             <div className="top-banner-left">
-              <span>📧 info@ai-smart.edu</span>
+              <span>📧 info@gi-smart.edu</span>
               <span>📞 +33 1 23 45 67 89</span>
             </div>
             <div className="top-banner-right">
@@ -44,10 +61,9 @@ const Header = () => {
       <nav className="navbar">
         <div className="container">
           <div className="nav-wrapper">
-            <div className="logo">
-              <h1>AI-SMART</h1>
-              <span className="logo-tagline">{t.excellenceInEducation}</span>
-            </div>
+            <Link to="/" className="logo">
+              <img src="/gi-smart.jpeg" alt="GI-SMART Logo" className="logo-image" />
+            </Link>
             <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
               <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>{t.home}</Link></li>
               <li><Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>{t.about}</Link></li>

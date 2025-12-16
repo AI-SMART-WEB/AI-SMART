@@ -88,7 +88,7 @@ const Features = () => {
                 y: -15,
                 scale: 1.05,
                 rotateY: 5,
-                boxShadow: "0 20px 50px rgba(0, 102, 204, 0.3)"
+                boxShadow: "0 20px 50px rgba(0, 47, 95, 0.3)"
               }}
               style={{ transformStyle: 'preserve-3d' }}
             >

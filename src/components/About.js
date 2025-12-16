@@ -54,8 +54,8 @@ const About = () => {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="AI-SMART Campus"
+                src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Human-Machine Dialogue - Not man versus machine, but minds in conversation with algorithms"
               />
             </motion.div>
             <div className="about-image-grid">

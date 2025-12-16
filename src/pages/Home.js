@@ -5,6 +5,7 @@ import About from '../components/About';
 import Programs from '../components/Programs';
 import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
+import FourCampuses from '../components/FourCampuses';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
@@ -66,6 +67,10 @@ const Home = () => {
 
       <motion.div variants={sectionVariants}>
         <Testimonials />
+      </motion.div>
+
+      <motion.div variants={sectionVariants}>
+        <FourCampuses />
       </motion.div>
 
       {/* Floating particles background */}

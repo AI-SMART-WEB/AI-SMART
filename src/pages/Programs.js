@@ -16,70 +16,55 @@ const Programs = () => {
 
   const programs = [
     {
-      id: 1,
-      title: 'Business Administration',
-      description: 'Comprehensive MBA program designed for future business leaders',
+      id: 0,
+      title: 'Bachelor of Artificial Intelligence Design (BAID)',
+      description: 'A comprehensive 4-year program combining AI, design, and ethics to create human-centered intelligent systems',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      duration: '4 Years',
+      degree: 'BAID',
+      features: ['AI & Machine Learning', 'Design Thinking', 'Ethics & Policy', 'Creative AI'],
+      link: '/baid-program'
+    },
+    {
+      id: 0.5,
+      title: 'Master of Science in AI & Strategic Data Systems (AI-SMART)',
+      description: '18-month program shaping leaders and innovators capable of directing complex, AI-driven transformations',
+      image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      duration: '18 Months',
+      degree: 'M.Sc AI-SMART',
+      features: ['Strategic Leadership', 'Global Specialization', 'Research Integration', 'Career Acceleration'],
+      link: '/aismart-program'
+    },
+    {
+      id: 0.7,
+      title: 'Bachelor of Business Administration in Tourism and Hospitality Innovation',
+      description: 'Prepare for the next generation of smart tourism, luxury experiences, and sustainable hospitality management',
+      image: 'https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      duration: '4 Years',
+      degree: 'BBA',
+      features: ['Smart Tourism', 'Luxury Experiences', 'Sustainable Hospitality', 'Global Service Ecosystems'],
+      link: '/tourism-hospitality-program'
+    },
+    {
+      id: 0.8,
+      title: 'Bachelor of Science in Strategic Management',
+      description: 'Prepare globally minded leaders who can navigate complex, data-driven organizations',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '2 Years',
-      degree: 'MBA',
-      features: ['Leadership Development', 'Global Business Strategy', 'Networking Opportunities']
-    },
-    {
-      id: 2,
-      title: 'Computer Science',
-      description: 'Cutting-edge technology and software engineering programs',
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '4 Years',
-      degree: 'B.Sc / M.Sc',
-      features: ['AI & Machine Learning', 'Software Development', 'Cybersecurity']
-    },
-    {
-      id: 3,
-      title: 'Engineering',
-      description: 'Advanced engineering programs in multiple specializations',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '4 Years',
-      degree: 'B.Eng / M.Eng',
-      features: ['Mechanical Engineering', 'Electrical Engineering', 'Civil Engineering']
-    },
-    {
-      id: 4,
-      title: 'Arts & Humanities',
-      description: 'Explore creativity and critical thinking in diverse fields',
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '3-4 Years',
-      degree: 'B.A / M.A',
-      features: ['Creative Writing', 'Visual Arts', 'Cultural Studies']
-    },
-    {
-      id: 5,
-      title: 'Medical Sciences',
-      description: 'Pre-med and health sciences programs for future healthcare professionals',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '5-6 Years',
-      degree: 'M.D / B.Sc',
-      features: ['Clinical Practice', 'Research Opportunities', 'Hospital Partnerships']
-    },
-    {
-      id: 6,
-      title: 'Law & Legal Studies',
-      description: 'Comprehensive legal education for aspiring lawyers and jurists',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '3-4 Years',
-      degree: 'LL.B / LL.M',
-      features: ['International Law', 'Corporate Law', 'Criminal Justice']
+      degree: 'B.Sc',
+      features: ['Strategic Analysis', 'Financial Literacy', 'Data-Driven Decisions', 'Global Leadership'],
+      link: '/strategic-management-program'
     }
   ];
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50, rotateY: -15 },
+    hidden: { opacity: 0, y: 20 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
-      rotateY: 0,
       transition: {
-        delay: i * 0.1,
-        duration: 0.6,
+        delay: i * 0.05,
+        duration: 0.3,
         ease: "easeOut"
       }
     })
@@ -117,27 +102,18 @@ const Programs = () => {
               custom={index}
               variants={cardVariants}
               whileHover={{ 
-                y: -15,
-                rotateY: 5,
-                rotateX: 5,
-                transition: { duration: 0.3 }
+                y: -5,
+                transition: { duration: 0.2 }
               }}
-              style={{ transformStyle: 'preserve-3d' }}
             >
               <div className="program-image-page">
-                <motion.img 
+                <img 
                   src={program.image} 
                   alt={program.title}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.5 }}
                 />
-                <motion.div 
-                  className="program-overlay-page"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                >
+                <div className="program-overlay-page">
                   <span className="program-degree-page">{program.degree}</span>
-                </motion.div>
+                </div>
               </div>
               <div className="program-content-page">
                 <div className="program-duration-page">{program.duration}</div>
@@ -148,14 +124,16 @@ const Programs = () => {
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
-                <motion.div
-                  whileHover={{ x: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link to="/application" className="program-link-page">
-                    Apply Now <span>→</span>
+                <div className="program-actions-page">
+                  {program.link && (
+                    <Link to={program.link} className="program-link-page">
+                      Learn More <span>→</span>
+                    </Link>
+                  )}
+                  <Link to="/application" className="btn-apply-program-page">
+                    Apply Now
                   </Link>
-                </motion.div>
+                </div>
               </div>
             </motion.div>
           ))}

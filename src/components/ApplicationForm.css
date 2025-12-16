@@ -4,7 +4,7 @@
 }
 
 .form-hero {
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 163, 255, 0.95) 100%),
+  background: linear-gradient(135deg, rgba(0, 47, 95, 0.95) 0%, rgba(41, 171, 226, 0.95) 100%),
               url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
@@ -80,10 +80,10 @@
 }
 
 .progress-step.active .progress-circle {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   color: white;
-  border-color: #0066cc;
-  box-shadow: 0 5px 20px rgba(0, 102, 204, 0.4);
+  border-color: #002F5F;
+  box-shadow: 0 5px 20px rgba(0, 47, 95, 0.4);
   transform: scale(1.1);
 }
 
@@ -96,7 +96,7 @@
 }
 
 .progress-step.active .progress-label {
-  color: #0066cc;
+  color: #002F5F;
   font-weight: 700;
 }
 
@@ -110,16 +110,16 @@
   color: #1a1a1a;
   margin-bottom: 30px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #0066cc;
+  border-bottom: 3px solid #002F5F;
 }
 
 .form-note {
   background: #e3f2fd;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid #002F5F;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
-  color: #004499;
+  color: #002F5F;
   font-size: 14px;
 }
 
@@ -162,9 +162,9 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #0066cc;
+  border-color: #002F5F;
   background: white;
-  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 0 4px rgba(0, 47, 95, 0.1);
 }
 
 .form-group textarea {
@@ -203,9 +203,9 @@
 }
 
 .file-input-wrapper:hover .file-name {
-  border-color: #0066cc;
+  border-color: #002F5F;
   background: white;
-  color: #0066cc;
+  color: #002F5F;
 }
 
 .form-actions {
@@ -218,10 +218,10 @@
 }
 
 .form-actions .btn {
-  flex: 1;
-  max-width: 200px;
-  padding: 16px;
-  font-size: 16px;
+  flex: 0;
+  max-width: 150px;
+  padding: 8px 20px;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -273,8 +273,8 @@
   }
 
   .form-actions .btn {
-    max-width: 100%;
-    width: 100%;
+    max-width: 150px;
+    width: auto;
   }
 }
 

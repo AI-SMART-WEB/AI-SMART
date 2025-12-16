@@ -11,64 +11,51 @@ const Programs = () => {
   
   const programs = [
     {
-      id: 1,
-      title: t.businessAdmin,
-      description: t.businessAdminDesc,
+      id: 0,
+      title: 'Bachelor of Artificial Intelligence Design (BAID)',
+      description: 'A comprehensive 4-year program combining AI, design, and ethics to create human-centered intelligent systems',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      duration: '4 Years',
+      degree: 'BAID',
+      link: '/baid-program'
+    },
+    {
+      id: 0.5,
+      title: 'Master of Science in AI & Strategic Data Systems (AI-SMART)',
+      description: '18-month program shaping leaders and innovators capable of directing complex, AI-driven transformations',
+      image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      duration: '18 Months',
+      degree: 'M.Sc AI-SMART',
+      link: '/aismart-program'
+    },
+    {
+      id: 0.8,
+      title: 'Bachelor of Science in Strategic Management',
+      description: 'Prepare globally minded leaders who can navigate complex, data-driven organizations',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '2 Years',
-      degree: 'MBA'
-    },
-    {
-      id: 2,
-      title: t.computerScience,
-      description: t.computerScienceDesc,
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '4 Years',
-      degree: 'B.Sc / M.Sc'
+      degree: 'B.Sc',
+      link: '/strategic-management-program'
     },
     {
-      id: 3,
-      title: t.engineering,
-      description: t.engineeringDesc,
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      id: 0.7,
+      title: 'Bachelor of Business Administration in Tourism and Hospitality Innovation',
+      description: 'Prepare for the next generation of smart tourism, luxury experiences, and sustainable hospitality management',
+      image: 'https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       duration: '4 Years',
-      degree: 'B.Eng / M.Eng'
-    },
-    {
-      id: 4,
-      title: t.artsHumanities,
-      description: t.artsHumanitiesDesc,
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '3-4 Years',
-      degree: 'B.A / M.A'
-    },
-    {
-      id: 5,
-      title: t.medicalSciences,
-      description: t.medicalSciencesDesc,
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '5-6 Years',
-      degree: 'M.D / B.Sc'
-    },
-    {
-      id: 6,
-      title: t.lawLegal,
-      description: t.lawLegalDesc,
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      duration: '3-4 Years',
-      degree: 'LL.B / LL.M'
+      degree: 'BBA',
+      link: '/tourism-hospitality-program'
     }
   ];
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50, rotateY: -15 },
+    hidden: { opacity: 0, y: 20 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
-      rotateY: 0,
       transition: {
-        delay: i * 0.1,
-        duration: 0.6,
+        delay: i * 0.05,
+        duration: 0.3,
         ease: "easeOut"
       }
     })
@@ -100,19 +87,14 @@ const Programs = () => {
               custom={index}
               variants={cardVariants}
               whileHover={{ 
-                y: -15,
-                rotateY: 5,
-                rotateX: 5,
-                transition: { duration: 0.3 }
+                y: -5,
+                transition: { duration: 0.2 }
               }}
-              style={{ transformStyle: 'preserve-3d' }}
             >
               <div className="program-image">
-                <motion.img 
+                <img 
                   src={program.image} 
                   alt={program.title}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.5 }}
                 />
                 <motion.div 
                   className="program-overlay"
@@ -126,14 +108,24 @@ const Programs = () => {
                 <div className="program-duration">{program.duration}</div>
                 <h3>{program.title}</h3>
                 <p>{program.description}</p>
-                <motion.div
-                  whileHover={{ x: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link to="/application" className="program-link">
-                    {t.learnMore} <span>→</span>
-                  </Link>
-                </motion.div>
+                <div className="program-actions">
+                  <motion.div
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link to={program.link || "/application"} className="program-link">
+                      {t.learnMore} <span>→</span>
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Link to="/application" className="btn-apply-program">
+                      Apply Now
+                    </Link>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           ))}

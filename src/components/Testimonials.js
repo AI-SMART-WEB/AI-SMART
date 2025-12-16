@@ -14,21 +14,21 @@ const Testimonials = () => {
       name: 'Sarah Johnson',
       role: 'MBA Graduate, Class of 2022',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      text: 'AI-SMART provided me with the skills and network I needed to excel in my career. The faculty is exceptional and the opportunities are endless.'
+      text: 'GI-SMART provided me with the skills and network I needed to excel in my career. The faculty is exceptional and the opportunities are endless.'
     },
     {
       id: 2,
       name: 'Michael Chen',
       role: 'Computer Science Graduate',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      text: 'The hands-on learning approach and industry partnerships at AI-SMART gave me a real advantage when entering the job market. Highly recommended!'
+      text: 'The hands-on learning approach and industry partnerships at GI-SMART gave me a real advantage when entering the job market. Highly recommended!'
     },
     {
       id: 3,
       name: 'Emma Williams',
       role: 'Engineering Student',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      text: 'The modern facilities and supportive learning environment at AI-SMART have exceeded all my expectations. I feel prepared for my future career.'
+      text: 'The modern facilities and supportive learning environment at GI-SMART have exceeded all my expectations. I feel prepared for my future career.'
     }
   ];
 

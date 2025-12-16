@@ -16,6 +16,7 @@ const Hero = () => {
           <div className="hero-text">
             <h1 className="hero-title">{t.welcomeTitle}</h1>
             <p className="hero-subtitle">{t.welcomeSubtitle}</p>
+            <p className="hero-tagline">Global Intelligence. Human Creativity.</p>
             <div className="hero-buttons">
               <Link to="/programs" className="btn btn-primary">
                 {t.explorePrograms}

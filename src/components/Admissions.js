@@ -16,7 +16,7 @@ const Admissions = () => {
         'Video interview in English'
       ],
       icon: '📝',
-      color: '#0066cc'
+      color: '#002F5F'
     },
     {
       number: '02',
@@ -30,7 +30,7 @@ const Admissions = () => {
         'Decision communicated within 5 business days'
       ],
       icon: '✅',
-      color: '#00a3ff'
+      color: '#29ABE2'
     },
     {
       number: '03',
@@ -44,7 +44,7 @@ const Admissions = () => {
         'Complete enrollment process'
       ],
       icon: '🎓',
-      color: '#004499'
+      color: '#002F5F'
     }
   ];
 
@@ -54,7 +54,7 @@ const Admissions = () => {
         <div className="container">
           <div className="admissions-hero-content">
             <h2>Admission Process</h2>
-            <p>Simple 3-step admission process to start your journey with AI-SMART</p>
+            <p>Simple 3-step admission process to start your journey with GI-SMART</p>
             <a href="#application" className="btn btn-primary">Start Application</a>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Admissions = () => {
         <div className="admissions-cta">
           <div className="cta-content">
             <h3>Ready to Begin Your Journey?</h3>
-            <p>Join thousands of successful students who started their career at AI-SMART</p>
+            <p>Join thousands of successful students who started their career at GI-SMART</p>
             <div className="cta-buttons">
               <a href="#application" className="btn btn-primary">Apply Now</a>
               <a href="#contact" className="btn btn-secondary">Contact Admissions</a>

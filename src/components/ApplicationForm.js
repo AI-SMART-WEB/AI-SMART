@@ -84,7 +84,7 @@ const ApplicationForm = () => {
       <div className="form-hero">
         <div className="container">
           <h2>Application Form</h2>
-          <p>Complete your application to join AI-SMART</p>
+          <p>Complete your application to join GI-SMART</p>
         </div>
       </div>
       <div className="container">

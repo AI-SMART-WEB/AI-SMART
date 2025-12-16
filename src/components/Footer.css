@@ -14,11 +14,21 @@
 .footer-section h3 {
   font-size: 28px;
   font-weight: 800;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFC300;
+  margin-bottom: 15px;
+  font-style: italic;
+  letter-spacing: 0.5px;
 }
 
 .footer-section h4 {
@@ -54,7 +64,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #00a3ff;
+  color: #29ABE2;
   transform: translateX(5px);
 }
 
@@ -86,9 +96,9 @@
 }
 
 .social-links a:hover {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 47, 95, 0.4);
 }
 
 .footer-bottom {
@@ -120,7 +130,7 @@
 }
 
 .footer-links a:hover {
-  color: #00a3ff;
+  color: #29ABE2;
 }
 
 @media (max-width: 768px) {

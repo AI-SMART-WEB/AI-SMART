@@ -3,15 +3,20 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0);
+}
+
+.header.hidden {
+  transform: translateY(-100%);
 }
 
 .top-banner {
-  background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   color: white;
-  padding: 10px 0;
-  font-size: 14px;
-  box-shadow: 0 2px 10px rgba(0, 102, 204, 0.2);
+  padding: 4px 0;
+  font-size: 12px;
+  box-shadow: 0 2px 10px rgba(0, 47, 95, 0.2);
 }
 
 .top-banner-content {
@@ -25,7 +30,7 @@
 .top-banner-left,
 .top-banner-right {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -34,12 +39,12 @@
 .top-banner-right a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   cursor: pointer;
   transition: opacity 0.3s;
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .top-banner-left span:hover,
@@ -61,26 +66,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
-.logo h1 {
-  font-size: 32px;
-  font-weight: 800;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 0;
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s;
 }
 
-.logo-tagline {
-  font-size: 11px;
-  color: #666;
-  font-weight: 500;
-  letter-spacing: 1px;
-  display: block;
-  margin-top: -5px;
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-menu {
@@ -108,7 +111,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   transition: width 0.3s;
 }
 
@@ -117,16 +120,17 @@
 }
 
 .nav-menu li a:hover {
-  color: #0066cc;
+  color: #002F5F;
 }
 
 .btn-apply {
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   color: white !important;
   padding: 10px 25px;
   border-radius: 5px;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 47, 95, 0.3);
+  font-size: 14px;
 }
 
 .btn-apply::after {
@@ -135,7 +139,7 @@
 
 .btn-apply:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 102, 204, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 47, 95, 0.5);
 }
 
 .hamburger {
@@ -202,8 +206,8 @@
 
 @media (max-width: 768px) {
   .top-banner {
-    padding: 8px 0;
-    font-size: 12px;
+    padding: 4px 0;
+    font-size: 10px;
   }
 
   .top-banner-content {
@@ -220,35 +224,31 @@
   }
 
   .top-banner-left span {
-    font-size: 11px;
+    font-size: 10px;
     white-space: nowrap;
   }
 
   .top-banner-right {
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
   }
 
   .top-banner-right a {
-    font-size: 11px;
-    padding: 5px 10px;
+    font-size: 10px;
+    padding: 4px 8px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
   }
 
   .nav-wrapper {
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
-  .logo h1 {
-    font-size: 22px;
-  }
-
-  .logo-tagline {
-    font-size: 9px;
+  .logo-image {
+    height: 35px;
   }
 }
 
@@ -267,12 +267,8 @@
     padding: 4px 8px;
   }
 
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .logo-tagline {
-    font-size: 8px;
+  .logo-image {
+    height: 35px;
   }
 }
 

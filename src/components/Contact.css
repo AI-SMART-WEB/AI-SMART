@@ -4,7 +4,7 @@
 }
 
 .contact-banner {
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 163, 255, 0.95) 100%),
+  background: linear-gradient(135deg, rgba(0, 47, 95, 0.95) 0%, rgba(41, 171, 226, 0.95) 100%),
               url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
@@ -67,10 +67,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   border-radius: 50%;
   flex-shrink: 0;
-  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 47, 95, 0.3);
 }
 
 .contact-item h4 {
@@ -147,9 +147,9 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #0066cc;
+  border-color: #002F5F;
   background: white;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 47, 95, 0.1);
 }
 
 .form-group textarea {
@@ -158,9 +158,9 @@
 }
 
 .contact-form .btn {
-  width: 100%;
-  padding: 16px;
-  font-size: 17px;
+  width: auto;
+  padding: 8px 20px;
+  font-size: 14px;
   margin-top: 10px;
 }
 

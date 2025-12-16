@@ -1,0 +1,419 @@
+.tuition-pathway-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 140px 0 60px;
+  font-family: 'Lato', 'Open Sans', 'Roboto', 'Helvetica Neue', sans-serif;
+  margin-top: 0;
+}
+
+.pathway-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pathway-main-title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-bottom: 4px solid #002F5F;
+}
+
+.pathway-main-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #002F5F;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+.pathway-main-title .intro-text {
+  font-size: 17px;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 100%;
+}
+
+.pathway-section {
+  margin-bottom: 60px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.baid-header {
+  background: linear-gradient(135deg, #002F5F 0%, #002F5F 100%);
+  color: white;
+}
+
+.msc-header {
+  background: linear-gradient(135deg, #FFC300 0%, #FFC300 100%);
+  color: #002F5F;
+}
+
+.packages-header {
+  background: linear-gradient(135deg, #29ABE2 0%, #29ABE2 100%);
+  color: white;
+}
+
+.section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.section-description {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #29ABE2;
+}
+
+.pathway-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pathway-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 15px;
+}
+
+.pathway-table thead {
+  background: linear-gradient(135deg, #002F5F 0%, #004080 100%);
+  color: white;
+}
+
+.pathway-table th {
+  padding: 18px 15px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.pathway-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.pathway-table tbody tr:hover {
+  background: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.pathway-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pathway-table td {
+  padding: 20px 15px;
+  color: #333;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.pathway-table .tier-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #002F5F;
+}
+
+.pathway-table .tuition-amount {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #FFC300;
+  text-align: center;
+}
+
+.pathway-tagline {
+  text-align: left;
+  font-size: 16px;
+  color: #002F5F;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 30px;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+  border-radius: 12px;
+  border-left: 4px solid #29ABE2;
+  line-height: 1.7;
+}
+
+.pathway-tagline p {
+  margin: 0;
+}
+
+.pathway-divider {
+  height: 2px;
+  background: #E0E0E0;
+  margin: 50px 0;
+  width: 100%;
+}
+
+
+.callout-box {
+  background: linear-gradient(135deg, #29ABE2 0%, #1a8fc7 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  box-shadow: 0 8px 25px rgba(41, 171, 226, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.callout-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.callout-content {
+  flex: 1;
+}
+
+.callout-content strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.callout-content p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.95;
+}
+
+.highlights-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.highlights-header {
+  background: linear-gradient(135deg, #002F5F 0%, #004080 100%);
+  color: white;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights-list li {
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 12px;
+  border-left: 5px solid #29ABE2;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.highlights-list li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 47, 95, 0.15);
+}
+
+.highlights-list li strong {
+  font-family: 'Montserrat', sans-serif;
+  color: #002F5F;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.package-note {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #29ABE2;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.package-note p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pathway-footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  background: white;
+  border-radius: 15px;
+  border-top: 3px solid #002F5F;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pathway-footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #002F5F;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Print Styles */
+@media print {
+  .tuition-pathway-page {
+    padding: 20px 0;
+    background: white;
+  }
+
+  .pathway-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .tier-card,
+  .track-card,
+  .package-card {
+    page-break-inside: avoid;
+  }
+
+  .pathway-section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tuition-pathway-page {
+    padding: 120px 0 40px;
+  }
+
+  .pathway-section {
+    padding: 30px 20px;
+  }
+
+  .pathway-main-title {
+    padding: 30px 20px;
+  }
+
+  .pathway-main-title h1 {
+    font-size: 32px;
+  }
+
+  .pathway-main-title .intro-text {
+    font-size: 16px;
+  }
+
+  .section-header {
+    padding: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .section-header h3 {
+    font-size: 18px;
+  }
+
+  .section-description {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .pathway-table {
+    font-size: 14px;
+  }
+
+  .pathway-table th {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .pathway-table td {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+
+  .pathway-table .tier-name {
+    font-size: 15px;
+  }
+
+  .pathway-table .tuition-amount {
+    font-size: 18px;
+  }
+
+  .callout-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .highlights-list li {
+    font-size: 15px;
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pathway-header h1 {
+    font-size: 28px;
+  }
+
+  .tier-card,
+  .track-card,
+  .package-card {
+    padding: 20px;
+  }
+
+  .tier-price {
+    font-size: 24px;
+  }
+
+  .track-price {
+    font-size: 24px;
+  }
+
+  .package-price {
+    font-size: 28px;
+  }
+}
+

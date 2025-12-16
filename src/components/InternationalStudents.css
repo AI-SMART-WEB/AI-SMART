@@ -4,7 +4,7 @@
 }
 
 .international-hero {
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 163, 255, 0.95) 100%),
+  background: linear-gradient(135deg, rgba(0, 47, 95, 0.9) 0%, rgba(41, 171, 226, 0.9) 100%),
               url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
@@ -103,7 +103,7 @@
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   border-radius: 2px;
 }
 
@@ -128,7 +128,7 @@
 .feature-check {
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -211,7 +211,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 163, 255, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(0, 47, 95, 0.05) 0%, rgba(41, 171, 226, 0.05) 100%);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -222,8 +222,8 @@
 
 .service-card:hover {
   transform: translateY(-10px);
-  border-color: #0066cc;
-  box-shadow: 0 15px 40px rgba(0, 102, 204, 0.2);
+  border-color: #002F5F;
+  box-shadow: 0 15px 40px rgba(0, 47, 95, 0.2);
 }
 
 .service-icon {
@@ -267,15 +267,15 @@
 }
 
 .requirement-card:hover {
-  border-color: #0066cc;
-  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.15);
+  border-color: #002F5F;
+  box-shadow: 0 10px 30px rgba(0, 47, 95, 0.15);
   transform: translateY(-5px);
 }
 
 .requirement-number {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #0066cc 0%, #00a3ff 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -284,7 +284,7 @@
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 47, 95, 0.3);
 }
 
 .requirement-card h4 {
@@ -303,7 +303,7 @@
 
 .requirements-note {
   background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  border-left: 5px solid #0066cc;
+  border-left: 5px solid #002F5F;
   border-radius: 12px;
   padding: 25px;
   margin-top: 30px;
@@ -311,7 +311,7 @@
 
 .requirements-note p {
   font-size: 16px;
-  color: #004499;
+  color: #002F5F;
   line-height: 1.8;
   margin: 0;
 }
@@ -321,12 +321,12 @@
 }
 
 .cta-card {
-  background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+  background: linear-gradient(135deg, #002F5F 0%, #29ABE2 100%);
   border-radius: 25px;
   padding: 60px 40px;
   text-align: center;
   color: white;
-  box-shadow: 0 20px 60px rgba(0, 102, 204, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 47, 95, 0.3);
   position: relative;
   overflow: hidden;
 }

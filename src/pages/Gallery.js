@@ -20,55 +20,85 @@ const Gallery = () => {
       id: 1,
       src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       title: 'Main Campus',
-      category: 'Campus'
+      category: 'Campus',
+      caption: 'Campus Moments - Between lectures and labs, community is where confidence is built'
     },
     {
       id: 2,
       src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Library',
-      category: 'Facilities'
+      title: 'Collaboration in Motion',
+      category: 'Events',
+      caption: 'Ideas move faster when minds move together'
     },
     {
       id: 3,
       src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Computer Lab',
-      category: 'Facilities'
+      title: 'The Language of Machines',
+      category: 'Facilities',
+      caption: 'Lines of code as verses in a new language of possibility'
     },
     {
       id: 4,
       src: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       title: 'Study Hall',
-      category: 'Facilities'
+      category: 'Facilities',
+      caption: 'Learning Without Borders - Tools for a journey that never truly ends'
     },
     {
       id: 5,
       src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Student Life',
-      category: 'Events'
+      title: 'Global Classroom',
+      category: 'Events',
+      caption: 'Many accents, one conversation — a world of perspectives in a single room'
     },
     {
       id: 6,
       src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Engineering Lab',
-      category: 'Facilities'
+      title: 'Robotic Futures',
+      category: 'Facilities',
+      caption: 'From mechanical motion to embodied intelligence, the future moves with purpose'
     },
     {
       id: 7,
       src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Arts Center',
-      category: 'Facilities'
+      title: 'Immersive Realities',
+      category: 'Facilities',
+      caption: 'Step inside the simulation where learning, play, and discovery merge'
     },
     {
       id: 8,
       src: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Medical Lab',
-      category: 'Facilities'
+      title: 'Innovation Labs',
+      category: 'Facilities',
+      caption: 'Access to research labs and innovation centers for hands-on learning'
     },
     {
       id: 9,
       src: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Lecture Hall',
-      category: 'Facilities'
+      title: 'Future-Ready Graduates',
+      category: 'Events',
+      caption: 'From first day on campus to first day on the job — a path designed with purpose'
+    },
+    {
+      id: 10,
+      src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Innovation Across Cultures',
+      category: 'Events',
+      caption: 'When cultures connect, innovation accelerates — and the world grows smaller, brighter, closer'
+    },
+    {
+      id: 11,
+      src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Four Cities, One Future',
+      category: 'Campus',
+      caption: 'From Paris to Dubai, Germany to Bucharest — one degree, many worlds'
+    },
+    {
+      id: 12,
+      src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Ethics in the Loop',
+      category: 'Facilities',
+      caption: 'True intelligence is not just powerful — it is principled, responsible, and human-aware'
     }
   ];
 

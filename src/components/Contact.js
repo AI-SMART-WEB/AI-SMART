@@ -69,7 +69,7 @@ const Contact = () => {
                 <div className="contact-icon">📧</div>
                 <div>
                   <h4>{t.emailLabel}</h4>
-                  <p>{t.email}<br />admissions@ai-smart.edu</p>
+                  <p>{t.email}<br />admissions@gi-smart.edu</p>
                 </div>
               </div>
               <div className="contact-item">

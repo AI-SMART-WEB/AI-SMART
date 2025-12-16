@@ -13,7 +13,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>AI-SMART</h3>
+            
+            <h3>GI-SMART</h3>
+            <p className="footer-tagline">Global Intelligence. Human Creativity.</p>
             <p>{t.footerDesc}</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook" rel="noopener noreferrer">📘</a>
@@ -30,6 +32,7 @@ const Footer = () => {
               <li><Link to="/about">{t.aboutUs}</Link></li>
               <li><Link to="/programs">{t.programs}</Link></li>
               <li><Link to="/admissions">{t.admissions}</Link></li>
+              <li><Link to="/tuition-pathway">Tuition Pathway</Link></li>
               <li><Link to="/gallery">{t.gallery}</Link></li>
               <li><Link to="/contact">{t.contact}</Link></li>
             </ul>
@@ -56,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 AI-SMART. {t.allRightsReserved}</p>
+          <p>&copy; 2024 GI-SMART. {t.allRightsReserved}</p>
           <div className="footer-links">
             <a href="#">{t.privacyPolicy}</a>
             <a href="#">{t.termsOfService}</a>
