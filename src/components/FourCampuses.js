@@ -6,7 +6,6 @@ import './FourCampuses.css';
 
 const FourCampuses = () => {
   const { language } = useLanguage();
-  const t = translations[language] || translations.en;
 
   const campuses = [
     {
