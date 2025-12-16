@@ -1,11 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useLanguage } from '../context/LanguageContext';
-import { translations } from '../translations/translations';
 import './FourCampuses.css';
 
 const FourCampuses = () => {
-  const { language } = useLanguage();
 
   const campuses = [
     {
